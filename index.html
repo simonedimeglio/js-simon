@@ -6,8 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simone Dice..</title>
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     </head>
+
     <body>
-        <div class="result"></div>
+        <div class="container">
+            <div class="game-container">
+                <div class="game-title">
+                    <h1>SIMONE DICE</h1>
+                    <h4><i class="fas fa-gamepad"></i></h4>
+                    <h3>The official game</h3>
+                </div>
+                
+                <div class="game-txt">
+                    <h5>Hai avuto 30 secondi per imparare i seguenti numeri:</h5>
+                    <h6 id="simon-numbers"></h6>
+                    <br>
+                    <h6>Hai ricordato solo i seguenti numeri: </h6>
+                    <h6 id="player-numbers"></h6>
+                    <br>
+                    <h5>In totale hai indovinato <span id="score"></span> numeri su 5!</h5>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
     </body>
+
 </html>

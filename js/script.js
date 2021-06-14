@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var numeriRandom = []; // array per numeri generati randomicamente
     var numeriGiocatore = []; // array per numeri dichiarati dal giocatore (via prompt)
     
+    // funzione che genera numeri random da un numero min ad un numero max
     function randomNumberGenerator(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     };
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // per 5 volte richiedo via prompt un numero al giocatore  
       for (var x = 0; x < 5; x++) {
-        playerNumber = parseInt(prompt("inserisci i numeri che ricordi"));
+        playerNumber = parseInt(prompt("inserisci, uno alla volta, i numeri che ricordi"));
 
         // se il numero inserito è uno dei 5 numeri generati inizialmente
         // lo pusho nell'array di riferimento
@@ -37,10 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // DICHIARO CHE IL TEMPO È SCADUTO E MOSTRO IL RISULTATO
-      alert('TEMPO SCADUTO: hai indovinato '+ numeriGiocatore.length + ' numeri su 5.')
-      
-    }, 5000)
+      alert('FINE DELLA PARTITA: hai indovinato '+ numeriGiocatore.length + ' numeri su 5.')
+      // Stampo i risultati in HTML
+        document.getElementById('simon-numbers').innerHTML = numeriRandom;
+        document.getElementById('player-numbers').innerHTML = numeriGiocatore;
+        document.getElementById('score').innerHTML = numeriGiocatore.length;
+    }, 30000)
   
+    
 });
   
   
