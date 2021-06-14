@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #ffbf69;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 600px;
+    height: 300px;
+    border: 5px solid #2ec4b6;
+    border-radius: 20%;
+    background-color: #cbf3f0;
+    color: #ff9f1c;
+    text-align: center;
+}
+
+.fa-gamepad {
+    font-size: 40px;
+}
+
+.game-title {
+    padding-top: 10px;
+}
+
+.game-txt {
+    padding-top: 30px;
+}
